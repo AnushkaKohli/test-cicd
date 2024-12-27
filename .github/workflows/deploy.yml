@@ -21,7 +21,7 @@ jobs:
 
         # It builds the Docker image using the Dockerfile.user and pushes it to your Docker Hub repository with the latest tag.
       - name: Build and push Docker image
-        uses: docker/build-and-push@v2
+        uses: docker/build-push-action@v2
         with:
           context: .
           file: ./docker/Dockerfile.user
